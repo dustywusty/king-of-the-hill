@@ -16,7 +16,7 @@ RUN \
 #
 # --------------------------------------------------------- #
 
-#VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/certs", "/etc/nginx/conf.d", "/var/log/nginx"]
+VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/ssl", "/var/log/nginx", "/usr/share/nginx/www"]
 
 #
 # ..
