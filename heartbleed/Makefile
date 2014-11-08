@@ -15,8 +15,9 @@ run:
 		-p 80:80 \
 		-p 443:443 \
 		-v /var/docker/heartbleed/etc/nginx/sites-enabled:/etc/nginx/sites-enabled \
-		-v /var/docker/heartbleed/etc/nginx/certs:/etc/nginx/certs \
+		-v /var/docker/heartbleed/etc/nginx/ssl:/etc/nginx/ssl \
 		-v /var/docker/heartbleed/var/log/nginx:/var/log/nginx \
+		-v /var/docker/heartbleed/usr/share/nginx/www:/usr/share/nginx/www \
 		$(IMAGE_NAME):$(IMAGE_VERSION)
 
 deploy:
